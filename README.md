@@ -12,6 +12,7 @@ TCP socket
 
 Terminal UI
 
+## installation
 ```
 git clone https://github.com/security-softwares/socket_chat/
 
