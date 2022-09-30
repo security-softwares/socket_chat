@@ -4,13 +4,13 @@
 Encrypted Chat (python) Curses for Terminal !!
 
 ---
-Easy to use 
+>Easy to use 
 
-Inbuilt Encryption
+>Inbuilt Encryption
 
-TCP socket
+>TCP socket
 
-Terminal UI
+>Terminal UI
 
 ## installation
 ```
