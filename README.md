@@ -53,6 +53,8 @@ HiddenServicePort 80 127.0.0.1:8080
 
 - >torsocks python3 chat_server.py
 
+host=localhost or (default)
+
 port = 8080 ``` as set in the torrc ```
 
 
