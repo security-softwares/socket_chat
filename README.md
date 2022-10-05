@@ -27,7 +27,40 @@ python3 chat_server -h
 
  For public server use
 Ngrok and local Host and local Port 
+# **OR**
+
+## Tor setup over chat traffic
+
+>nano /etc/tor/torrc
+- **remove "#" from these lines**
+```
+
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 127.0.0.1:8080
+                   ^             ^
+                   |             |
+                   |     set any port to listen 
+                         
+  Note:    these port should not be same 
+```
+- >sudo cat /var/lib/tor/hidden_service/hostname
+- **copy host address**
+- *after all configurations completed*
+
+# **TO Run in Tor Network
+
+## Server Side Tor
+
+- >torsocks python3 chat_server.py
+
+port = 8080 ``` as set in the torrc ```
 
 
-## upcoming updates 
-- Tor network (.onion)
+## Client side Tor
+
+- >torsocks python3 chat_client.py
+
+host= hostname (.onion address)
+
+port = 80 ``` listning address of tor ```
+
