@@ -47,7 +47,7 @@ HiddenServicePort 80 127.0.0.1:8080
 - **copy host address**
 - *after all configurations completed*
 
-# **TO Run in Tor Network
+# **TO Run in Tor Network**
 
 ## Server Side Tor
 
